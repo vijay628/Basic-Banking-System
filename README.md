@@ -4,9 +4,9 @@ Welcome to the Basic Banking System, a simple dynamic website designed for handl
 ## Features
 
 1. **Dummy Data Setup**:
--The website comes pre-loaded with a dummy dataset of up to 10 customers. The MongoDB is used as database to store customers dtails and you can add more customer details as the name ,emails and other details in the index.js and it will initialized the database and add the updated details. The customers' table stores basic information such as name, email, and current balance. The transfers table records all the transactions that have occurred.
+   -The website comes pre-loaded with a dummy dataset of up to 10 customers. The MongoDB is used as database to store customers dtails and you can add more customer details as the name ,emails and other details in the index.js and it will initialized the database and add the updated details. The customers' table stores basic information such as name, email, and current balance. The transfers table records all the transactions that have occurred.
 
-2. **Frontend Flow**:
+3. **Frontend Flow**:
    - **Home Page**: The starting point of the website.
    - **View all Customers**: Browse through the list of all customers.
    - **Select and View one Customer**: Get detailed information about a specific customer.
@@ -14,8 +14,8 @@ Welcome to the Basic Banking System, a simple dynamic website designed for handl
    - **Show Transaction History**: Verify the updated information after the transaction.
      
 3.**Technologies Used**
--Frontend: HTML, CSS, JavaScript
--Backend: NodeJS. MongoDB
+   -Frontend: HTML, CSS, JavaScript
+   -Backend: NodeJS. MongoDB
 
 
 
