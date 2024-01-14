@@ -13,7 +13,7 @@ Welcome to the Basic Banking System, a simple dynamic website designed for handl
    - **Transfer Money**: Initiate a money transfer.
    - **Show Transaction History**: Verify the updated information after the transaction.
      
- 3.**Technologies Used**:
+3. **Technologies Used**:
     -**Frontend**: HTML, CSS, JavaScript
     -**Backend**: NodeJS. MongoDB
 
