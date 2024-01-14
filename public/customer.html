@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Basic Banking System</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-custom  navbar-expand-lg bg-body-tertiary">
+    <span class="container-fluid">
+      <a class="navbar-brand " href="#">The Spark Foundation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./allcustomer.html">View all Customer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" target="_parent" aria-current="page" href="#">Select and View one Customer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_parent" href="./payment.html">Transfer Money</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./history.html">Show All Transaction History</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-xxl custom2">
+    <h1>Welcome to Basic Banking System</h1>
+
+    <div class="container-md" id="customer">
+      <h3><i>Enter the Customer Name Below To Search</i></h3>
+      <form class="d-flex" onsubmit="fetchCustomerName(); return false;">
+        <input class="form-control me-2" type="text" id="customerName" placeholder="Enter Customer Name">
+        <button class="btn btn-outline-primary" type="submit">Search Customer</button>
+      </form>
+    </div>
+
+    <div class="container-md">
+      <table class="table table-hover table-dark table-bordered border-primary">
+        <thead>
+          <h2>Customer List</h2>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Balance</th>
+          </tr>
+        </thead>
+        <tbody id="customers-list"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    // Function to fetch Customer details
+    function fetchCustomerName() {
+  var customerName = document.getElementById("customerName").value;
+
+  fetch(`/customers/${encodeURIComponent(customerName)}`)
+    .then(response =>{
+        if (!response.ok) {
+            alert(`No details found for ${customerName}. Please enter valid Customer Name`);
+            throw new Error(`Failed to fetch transaction history for ${customerName}: ${response.statusText}`);
+          }
+         return response.json()
+    })
+    
+    .then(data => {
+      const customersList = document.getElementById('customers-list');
+      customersList.innerHTML = ''; // Clear previous content
+
+      if (data.customers && data.customers.length > 0) {
+        const customer = data.customers[0]; // Take the first customer
+
+        customersList.innerHTML += `
+          <tr>
+            <td>${customer.name}</td>
+            <td>${customer.email}</td>
+            <td>${customer.balance}</td>
+          </tr>
+        `;
+      } else {
+        // Handle the case where no customer is found
+        customersList.innerHTML = '<tr><td colspan="3">No customer found</td></tr>';
+      }
+    })
+    .catch(error => console.error('Error fetching customer:', error));
+}
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

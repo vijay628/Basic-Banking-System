@@ -1,0 +1,53 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #customers-list {
+    margin-top: 20px;
+  }
+  div {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .navbar-custom {
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+  .custom1{
+    display: flex;
+    flex-direction:row;
+  }
+  .form-floating{
+    width: 30vw;
+  }
+.custom2{
+  position: relative;
+  top: 15vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.custom4{
+  position: relative;
+top: -2vh
+}
+.custom3 button{
+  float: right;
+  margin-top: -45px;
+}
+.nav-link{
+  margin-left: 10px;
+  margin-right: 10px; 
+}
