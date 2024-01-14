@@ -15,7 +15,7 @@ The website comes pre-loaded with a dummy dataset of up to 10 customers. The Mon
      
 3.**Technologies Used**
 Frontend: HTML, CSS, JavaScript
-Backend: Choose one - NodeJS. MongoDB
+Backend: NodeJS. MongoDB
 
 
 
