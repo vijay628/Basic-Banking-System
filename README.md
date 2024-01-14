@@ -14,8 +14,8 @@ Welcome to the Basic Banking System, a simple dynamic website designed for handl
    - **Show Transaction History**: Verify the updated information after the transaction.
      
 3. **Technologies Used**:
-    -**Frontend**: HTML, CSS, JavaScript
-    -**Backend**: NodeJS. MongoDB
+   -**Frontend**: HTML, CSS, JavaScript
+   -**Backend**: NodeJS. MongoDB
 
 
 
