@@ -12,6 +12,13 @@ Welcome to the Basic Banking System, a simple dynamic website designed for handl
    - **Select and View one Customer**: Get detailed information about a specific customer.
    - **Transfer Money**: Initiate a money transfer.
    - **Show Transaction History**: Verify the updated information after the transaction.
+
+3. **Frontend Flow**:
+   - **Home Page**: The starting point of the website.
+   - **View all Customers**: Browse through the list of all customers.
+   - **Select and View one Customer**: Get detailed information about a specific customer.
+   - **Transfer Money**: Initiate a money transfer.
+   - **Show Transaction History**: Verify the updated information after the transaction.
      
 3. **Technologies Used**:
    -**Frontend**: HTML, CSS, JavaScript
