@@ -17,4 +17,4 @@ Welcome to the Basic Banking System, a simple dynamic website designed for handl
    - **Frontend**: HTML, CSS, JavaScript
    - **Backend**: NodeJS, MongoDB
 4. **Website Images for Preview
-   ![screenshot](Screenshot(83).png)
+   ![alt text](https://github.com/vijay628/Basic-Banking-System/blob/master/website_image/Screenshot%20(83).png?raw=true)
