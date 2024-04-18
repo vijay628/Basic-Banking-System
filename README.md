@@ -17,4 +17,8 @@ Welcome to the Basic Banking System, a simple dynamic website designed for handl
    - **Frontend**: HTML, CSS, JavaScript
    - **Backend**: NodeJS, MongoDB
 4. **Website Images for Preview
-   ![alt text](https://github.com/vijay628/Basic-Banking-System/blob/master/website_image/Screenshot%20(83).png?raw=true)
+   ![Home Page](https://github.com/vijay628/Basic-Banking-System/blob/master/website_image/Screenshot%20(83).png?raw=true)
+   ![Customer List](https://github.com/vijay628/Basic-Banking-System/blob/master/website_image/Screenshot%20(84).png?raw=true)
+   ![Select and view one customer](https://github.com/vijay628/Basic-Banking-System/blob/master/website_image/Screenshot%20(85).png?raw=true)
+    ![Transfer Money](https://github.com/vijay628/Basic-Banking-System/blob/master/website_image/Screenshot%20(86).png?raw=true)
+    ![Transaction History](https://github.com/vijay628/Basic-Banking-System/blob/master/website_image/Screenshot%20(87).png?raw=true)
